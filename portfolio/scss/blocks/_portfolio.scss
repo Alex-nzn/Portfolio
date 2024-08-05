@@ -1,0 +1,147 @@
+.portfolio{
+        padding-bottom: 50px;
+}
+
+.portfolio .title-h3{
+margin-bottom: 20px;
+}
+
+.portfolio__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.portfolio__item {
+    position: relative;
+    width: 380px;
+    height: auto;
+    cursor: pointer;
+
+    @include tablet {
+        width: 354px;
+    }
+}
+
+.portfolio__item:hover{
+    & .portfolio__item-img{
+box-shadow: 0px 0px 20px -7px #039BE5;
+    }
+
+    & .portfolio__item-text{
+        color: #039BE5;
+    }
+}
+
+.portfolio__item-img {
+    padding: 23px 47px;
+    margin-bottom: 15px;
+    background-color: #F6F6F6;
+transition: box-shadow 0.1s ease-in;
+
+    @include tablet {
+        padding: 23px 34px;
+    }
+
+    @include mobile {
+        padding: 23px 22px;
+    }
+
+  
+
+  
+}
+
+.portfolio__item-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.text__title {
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 18px;
+
+    &--modal{
+        font-size: 24px;
+        margin-bottom: 10px;
+
+        @include mobile {
+            font-size: 22px;
+        }
+    }
+}
+
+.text__desc {
+    line-height: 1.5;
+    font-size: 14px;
+
+    &--modal p{
+        line-height: 1.3;
+        margin-bottom: 15px;
+        
+          @include mobile {
+            line-height: 1.5;
+          }
+        
+        }
+}
+
+.link {
+    line-height: 1.3;
+    font-size: 12px;
+    color:#6B9DB9;
+}
+
+.img__large {
+    position: absolute;
+        left: 82px;
+        top: 31px;
+        width: 217px;
+        height: 138px;
+
+    @include tablet {
+        left: 69px;
+            width: 217px;
+    }
+
+    @include mobile {
+        left: 57.1px;
+            width: 217px;
+    }
+
+    &--modal{
+
+            width: 382px;
+                height: 240px;
+                left: 193px;
+                top: 56px;
+
+               @include tablet {
+                left: 179px;
+               } 
+
+               @include mobile {
+                width: 220px;
+                    height: 137px;
+                    left: 55px;
+                    top: 50px;
+               }
+    }
+
+    &--react-logo-home {
+
+left: 88px;
+    top: 56px;
+    height: 98px;
+    }
+
+    &--react-logo-modal{
+       
+            left: 274px;
+                top: 100px;
+                height: 160px;
+    }
+}

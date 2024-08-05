@@ -1,0 +1,58 @@
+.header{
+        padding: 40px 0;
+}
+
+.header__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+
+
+    @include tablet {
+        padding: 30px 0;
+    }
+  
+    @include mobile {
+        padding: 30px 0 20px 0;
+    }
+}
+
+.header__logo-title{
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.header__logo-link{
+    color:#6B9DB9 ;
+    font-size: 14px;
+    line-height: 1.6;
+   
+  
+}
+
+.header__socials{
+   display: flex;
+ column-gap: 20px;
+
+& a{
+    border-radius: 50%;
+    transition: box-shadow 0.1s ease-in;
+    color: black;
+}
+ & a:hover{
+
+    box-shadow: 0px 0px 10px -2px #0F7DFF;
+ }
+
+ & a:active{
+   
+ }
+
+ @include mobile {
+     margin-bottom: 30px;
+ }
+}

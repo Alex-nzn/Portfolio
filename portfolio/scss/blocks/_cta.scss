@@ -1,0 +1,41 @@
+.cta{
+padding-bottom: 80px;
+}
+
+.cta__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+    padding: 60px 15px;
+background-color: #F0F5F9;
+
+@include mobile {
+        row-gap: 20px;
+        padding: 40px 15px;
+}
+}
+
+.cta__content-text{
+font-weight: 300;
+font-size: 14px;
+line-height: 1;
+}
+
+.cta__content-btn{
+background-color: #039BE5;
+    padding: 11px 20px;
+    border-radius: 80px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+transition: all 0.2s ease-in;
+
+    &:hover{
+background-color: #1c91cb;
+    }
+}
+
+.cta__content-btn img{
+    margin-right: 10px;
+}
