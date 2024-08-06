@@ -270,6 +270,9 @@ a:focus-visible {
   align-items: center;
 }
 
+.header__logo:hover .header__logo-link {
+  color: #1181b9;
+}
 @media (max-width: 1230px) {
   .header__logo {
     padding: 30px 0;
@@ -290,6 +293,7 @@ a:focus-visible {
   color: #6B9DB9;
   font-size: 14px;
   line-height: 1.6;
+  transition: color 0.2s ease-in;
 }
 
 .header__socials {
@@ -299,11 +303,11 @@ a:focus-visible {
 }
 .header__socials a {
   border-radius: 50%;
-  transition: box-shadow 0.1s ease-in;
+  transition: all 0.2s ease-in;
   color: black;
 }
 .header__socials a:hover {
-  box-shadow: 0px 0px 10px -2px #0F7DFF;
+  transform: scale(1.2);
 }
 @media (max-width: 768px) {
   .header__socials {
@@ -331,13 +335,25 @@ a:focus-visible {
   padding: 30px;
   background-color: #FBFBFB;
 }
-.about__block p + p {
-  margin-top: 15px;
+.about__block p {
+  margin-bottom: 15px;
 }
 @media (max-width: 1230px) {
   .about__block {
     width: 354px;
   }
+}
+
+.about__btn {
+  display: inline-block;
+  text-align: center;
+}
+.about__btn a {
+  display: block;
+}
+.about__btn span {
+  font-size: 11px;
+  color: #999;
 }
 
 .about__block--list {
@@ -449,17 +465,17 @@ a:focus-visible {
 }
 
 .portfolio__item:hover .portfolio__item-img {
-  box-shadow: 0px 0px 20px -7px #039BE5;
+  box-shadow: 0px 0px 20px -7px #1181b9;
 }
 .portfolio__item:hover .portfolio__item-text {
-  color: #039BE5;
+  color: #1181b9;
 }
 
 .portfolio__item-img {
   padding: 23px 47px;
   margin-bottom: 15px;
   background-color: #F6F6F6;
-  transition: box-shadow 0.1s ease-in;
+  transition: box-shadow 0.2s ease-in;
 }
 @media (max-width: 1230px) {
   .portfolio__item-img {
@@ -597,7 +613,7 @@ a:focus-visible {
   transition: all 0.2s ease-in;
 }
 .cta__content-btn:hover {
-  background-color: #1c91cb;
+  background-color: #1181b9;
 }
 
 .cta__content-btn img {
@@ -640,7 +656,22 @@ a:focus-visible {
   color: rgba(255, 255, 255, 0.5);
 }
 .footer__right a {
+  position: relative;
   color: rgba(255, 255, 255, 0.75);
+  border: 0px solid rgba(255, 255, 255, 0.75);
+}
+.footer__right a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: all 0.2s ease-in;
+}
+.footer__right a:hover::after {
+  width: 100%;
 }
 @media (max-width: 768px) {
   .footer__right {

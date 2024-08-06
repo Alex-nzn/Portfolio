@@ -33,10 +33,27 @@ font-weight: 400;
         color: rgba(255, 255, 255, 0.5);
 
 
-
         & a{
+            position: relative;
             color: rgba(255, 255, 255, 0.75);
+        border: 0px solid rgba(255, 255, 255, 0.75);
         }
+
+                & a::after{
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: rgba(255, 255, 255, 0.75);
+                    transition: all 0.2s ease-in;
+                }
+
+
+    & a:hover::after{
+    width: 100%;
+    }
 
         @include mobile {
             text-align: left;

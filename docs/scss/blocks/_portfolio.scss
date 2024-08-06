@@ -26,11 +26,11 @@ margin-bottom: 20px;
 
 .portfolio__item:hover{
     & .portfolio__item-img{
-box-shadow: 0px 0px 20px -7px #039BE5;
+box-shadow: 0px 0px 20px -7px #1181b9;;
     }
 
     & .portfolio__item-text{
-        color: #039BE5;
+        color: #1181b9;;
     }
 }
 
@@ -38,7 +38,7 @@ box-shadow: 0px 0px 20px -7px #039BE5;
     padding: 23px 47px;
     margin-bottom: 15px;
     background-color: #F6F6F6;
-transition: box-shadow 0.1s ease-in;
+transition: box-shadow 0.2s ease-in;
 
     @include tablet {
         padding: 23px 34px;

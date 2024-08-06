@@ -16,8 +16,8 @@
     width: 585px;
     padding: 30px;
 
-    p+p {
-            margin-top: 15px
+    p {
+            margin-bottom: 15px
         }
     
         background-color: #FBFBFB;
@@ -27,6 +27,21 @@
     
         }           
 }
+
+.about__btn{
+    display: inline-block;
+    text-align: center;
+
+   a {
+    display: block;
+   }
+
+    span {
+    font-size: 11px;
+    color: #999;
+   }
+}
+
 
 .about__block--list{
 
